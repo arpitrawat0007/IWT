@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    border: 2px solid #000000;
+}
+
+td {
+    border: 2px solid #000000;
+}
+
+/* Different border styles for specific cells */
+td.monday {
+    border: 2px double #e74c3c;
+}
+
+td.tuesday {
+    border: 2px double #e74c3c;
+}
+
+td.wednesday {
+    border: 2px double #2ecc71;
+}
+
+td.thursday {
+    border: 2px double #2ecc71;
+}
+
+td.friday {
+    border: 2px double #f39c12;
+}
+
+td.saturday {
+    border: 2px double #e74c3c;
+}

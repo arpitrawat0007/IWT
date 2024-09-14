@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Specification</title>
+    <style>
+        /* Style for the frames */
+        #objectFrame {
+            width: 50%;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        #specificationFrame {
+            width: 50%;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Frame for displaying the object -->
+    <iframe id="objectFrame" src="object.html"></iframe>
+
+    <!-- Frame for displaying the specification -->
+    <iframe id="specificationFrame"></iframe>
+
+    <script>
+        // Get references to the frames
+        const objectFrame = document.getElementById('objectFrame');
+        const specificationFrame = document.getElementById('specificationFrame');
+
+        // Add event listener for mouseover on the object frame
+        objectFrame.addEventListener('mouseover', () => {
+            // Get the content of the object frame
+            const objectContent = objectFrame.contentDocument.body.innerHTML;
+
+            // Display the object specification in the specification frame
+            specificationFrame.contentDocument.body.innerHTML = `<p>Object Specification:</p><pre>${objectContent}</pre>`;
+        });
+    </script>
+</body>
+</html>
